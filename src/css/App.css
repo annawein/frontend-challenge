@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   padding: 15px;
+  background-color: mediumaquamarine;
 }
 
 .App-logo {
@@ -8,7 +9,7 @@
   pointer-events: none;
 }
 
-input[type=text] {
+/* input[type=text] {
   padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -39,4 +40,99 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   color: #fff;
+} */
+
+#body {
+  height: 100%;
+  padding-bottom: 20px;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0;
+  background-color: mediumaquamarine;
+}
+
+#root {
+  height: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0;
+  background-color: mediumaquamarine;
+}
+
+
+.url-shortener-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.url-shortener-form  > p {
+  margin-top: 10vh;
+  color: white;
+  font-weight: bold;
+  font-size: 10vh;
+  width: 70vw;
+}
+
+.action {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 40vw; 
+  height: 7vh;
+}
+
+.url-here {
+  display: flex;
+  height: 6vh;
+  width: 30vw; 
+  outline: none;
+  border: none;
+  color: gray;
+}
+
+.url-here > label {
+  display: flex;
+  height: 6vh;
+  outline: none;
+  border: none;
+}
+
+.url-here-button {
+  display: flex;
+  height: 100%;
+  background-color: midnightblue;
+  color: white;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  outline: none;
+  border: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+  /* justify-content: center;
+  align-items: center;
+  background-color: white; */
+}
+
+.url-here-button:hover {
+  background-color: rgb(34, 34, 182);
+  color: mediumaquamarine;
+  
+}
+
+.url-here-button:active {
+  background-color: rgb(34, 34, 182);
+}
+
+.url-here-button:focus {
+  outline:0;
+  border: none;
+    outline: none;
+}
+
+html, body, #app, #app>div {
+  height: 100%
 }
