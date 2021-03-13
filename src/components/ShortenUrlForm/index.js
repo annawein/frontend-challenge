@@ -1,3 +1,3 @@
-import ShortenUrlForm from '.';
+import ShortenUrlForm from './ShortenUrlForm';
 
 export { ShortenUrlForm };
