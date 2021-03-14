@@ -45,8 +45,8 @@ const ShortenUrlForm = () => {
             <h2>Looking to shorten your URL?</h2>
             <form onSubmit={handleOnSubmit}>
                 <label htmlFor="shorten">
-                    Url:
-                    <input placeholder="Url to shorten" id="shorten" type="text" value={value} onChange={handleOnChange} />
+                    URL:
+                    <input placeholder="URL to shorten" id="shorten" type="text" value={value} onChange={handleOnChange} />
                 </label>
                 <input type="submit" value="Shorten" />
                 {/* TODO: show below only when the url has been shortened and copied */}
