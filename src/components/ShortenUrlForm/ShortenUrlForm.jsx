@@ -2,8 +2,10 @@
 
 import React, { useCallback, useState } from 'react';
 import { convertToShort } from '../../service/urlService';
+// eslint-disable-next-line
 import copiedDataAnimation from '../../assets/lottie/copied.json';
 import './styles.css';
+import Navbar from './Navbar';
 
 const ShortenUrlForm = () => {
     const [value, setValue] = useState('');
@@ -39,12 +41,14 @@ const ShortenUrlForm = () => {
 
     return (
         <>
+            <Navbar />
+            <h2>Looking to shorten your URL?</h2>
             <form onSubmit={handleOnSubmit}>
                 <label htmlFor="shorten">
                     Url:
                     <input placeholder="Url to shorten" id="shorten" type="text" value={value} onChange={handleOnChange} />
                 </label>
-                <input type="submit" value="Shorten and copy URL" />
+                <input type="submit" value="Shorten" />
                 {/* TODO: show below only when the url has been shortened and copied */}
 
             </form>

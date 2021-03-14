@@ -70,3 +70,19 @@ input[type='submit']:hover {
     border-bottom: 1px solid red;
     border-radius: 0;
 }
+
+.nav-bar {
+    background-color: black;
+    display: flex;
+    justify-content: start;
+}
+
+.nav-bar > img {
+    width: 150px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-weight: 50;
+    font-size: 50px;
+}
